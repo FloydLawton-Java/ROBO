@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-plane position="0 0 0" width:20 height:5 color="purple"></a-plane>
+    <a-scene background="color: black">
+        <!--CAMERA-->
+        <a-entity position="0 0 20">
+            <a-camera></a-camera>
+        </a-entity>
+        <!--FACE-->
+        <a-entity>
+            <a-sphere position="0 3.9 5" color="brown" radius="1"></a-sphere>
+        </a-entity>
+        <!--EYE 1-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-sphere position="-0.4 3.7 7" radius="0.3" color="white"></a-sphere>
+        </a-entity>
+        <!--EYE 2--->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-sphere position="0.4 3.7 7" radius="0.3" color="white"></a-sphere>
+        </a-entity>
+        <!--BODY-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-sphere position="0 1 5" radius="2" color="blue"></a-sphere>
+        </a-entity>
+        <!--LEG 1-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-cylinder position="-0.7 -2.3 5" radius="0.2" height="3.5" color="orange"></a-cylinder>
+        </a-entity>
+        <!--LEG 2-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-cylinder position="0.7 -2.3 5" radius="0.2" height="3.5" color="orange"></a-cylinder>
+        </a-entity>
+        <!--ARM 1-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-cylinder position="2.5 2 5" height="3" radius=".25" color="cyan" rotation="125 0 90"></a-cylinder>
+        </a-entity>
+        <!--ARM 2-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-cylinder position="-2.5 2 5" height="3" radius=".25" color="cyan" rotation="125 0 90"></a-cylinder>
+        </a-entity>
+        <!--FLOOR-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-plane position="0 -4.5 5" width="20" height="0.1" color="purple"></a-plane>
+        </a-entity>
+        <!--HAND 1-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-octahedron position="4 2 5" radius="0.9" color="purple"></a-octahedron>
+        </a-entity>
+        <!--HAND 2-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-octahedron position="-4 2 5" radius="0.9" color="purple"></a-octahedron>
+        </a-entity>
+        <!--SHOE 1-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-box position="0.7 -3.8 5" color="yellow"></a-box>
+        </a-entity>
+        <!--SHOE 2-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-box position="-0.7 -3.8 5" color="yellow"></a-box>
+        </a-entity>
+        <!--SHIRT SEPERATER-->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-cylinder position="0 1.2 10" radius="0.03" height="2.7" rotation="180 90 180" color="pink"></a-cylinder>
+        </a-entity>
+        <!--EYE 1--->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-sphere position="0.3 0.5 7" radius="0.15" color="green"></a-sphere>
+        </a-entity>
+        <!--EYE 2--->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-sphere position="0.3 1.2 7" radius="0.15" color="green"></a-sphere>
+        </a-entity>
+        <!--EYE 3--->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-sphere position="0.3 1.9 7" radius="0.15" color="green"></a-sphere>
+        </a-entity>
+        <!--EYE 4--->
+        <a-entity position="0 0 0" rotation="0 0 0">
+            <a-sphere position="0.3 -0.2 7" radius="0.15" color="green"></a-sphere>
+        </a-entity>
+    </a-scene>
+</body>
+
+</html>
